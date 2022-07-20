@@ -1,0 +1,154 @@
+.icon-fab {
+  font-size: 300%;
+}
+
+.container-projetos {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(3, auto);
+  justify-content: space-between;
+  grid-row-gap: 32px;
+}
+
+.projetos {
+  padding: 10px 150px;
+  margin-bottom: 130px;
+}
+
+.projetos h2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.moldura-projetos {
+  background-color: #bd5d38;
+  padding: 40px 25px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.moldura-projetos img {
+  width: 300px;
+  height: 130px;
+}
+
+.moldura-projetos:hover {
+  transform: scale(1.02);
+}
+
+.moldura-projetos h3 {
+  margin-top: 25px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.moldura-projetos p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+@media(max-width: 1400px) {
+  .projetos {
+    padding: 24px;
+    margin-bottom: 0;
+  }
+}
+
+@media(max-width: 1150px) {
+  .projetos .container-projetos {
+    grid-template: repeat(3, auto) / repeat(2, auto);
+    justify-content: space-evenly;
+  }
+}
+
+@media(max-width: 800px) {
+  .projetos .container-projetos {
+    grid-template: repeat(6, auto) / repeat(1, auto);
+  }
+}
+
+@media(max-width: 400px) {
+  .projetos .container-projetos a {
+    width: 100%;
+  }
+
+  .container-projetos .moldura-projetos img {
+    width: 100%;
+  }
+}
+
+.contato {
+  padding: 0px 150px;
+  margin-bottom: 130px;
+}
+
+.lista-contatos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.container-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+
+.lista-contatos li {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bd5d38;
+  transition: 0.3s ease-in-out;
+  border-radius: 50%;
+  position: relative;
+}
+
+.lista-contatos li:hover {
+  transform: scale(1.20);
+}
+
+.rodape {
+  padding: 0px 150px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d0d0d0;
+}
+
+.rodape p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+.rodape span {
+  font-weight: 700;
+  color: #008738;
+}
+
+#Projetos{
+  padding: 10px;
+  position: relative;
+  border: none;
+  left: 500px;
+  width: 180px;
+  top: -35px;
+  cursor: pointer;
+  background-color:#bd5d38;
+}
+
+#Projetos:hover{
+  background-color:#020000;
+  color: rgb(255, 253, 253);
+}
